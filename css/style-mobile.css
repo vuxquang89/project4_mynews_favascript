@@ -1,0 +1,81 @@
+@media only screen and (max-width: 767px) {
+
+    /*============ .search-box =============*/
+    .hidden-box-search{
+        margin-top: -85px; 
+    }
+
+    .show-box-search{
+        margin-top: 75px;
+    }
+
+    div.search-box{
+        width: 70%;
+    }
+
+    div.search-box div#form-search div.form-left{
+        width: 90%;
+    }
+
+    div.search-box div#form-search div.form-left .col-label{
+        display: none;
+    }
+
+    div.search-box div#form-search div.form-left .col-input{
+        width: 70%;
+    }
+
+    div.search-box div#form-search div.form-right{
+        width: 10%;
+        margin-left: 0;
+    }
+
+    div.search-box div#form-search div.form-right .btn{
+        font-size: 12px;
+        display: none;
+    }
+
+    div.search-box div#form-search div.form-right #i-search{
+        display: inline;
+        right: 7%;
+        top: 35%;
+    }
+
+    div.search-box i#close-box{
+        top: 5px;
+    }
+
+
+
+    /*============ #main ============*/
+
+        /*======== .row-content ========*/
+        div#main div.row-content{
+            width: 100%;
+        }
+        /*
+        div#main div.row-content div.col-left{
+            width: 35%;
+        }
+        */
+        div#main div.row-content div.col-left img{
+            height: 100px;
+        }
+
+        div#main div.row-content div.col-right{
+            width: 65%;
+            
+        }
+
+        div#main div.row-content div.col-right p.news-date{
+            font-size: .7em;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+    
+        div#main div.row-content div.col-right p.news-content{
+            font-size: 0.8em;
+            line-height: 12px;
+        }
+
+}

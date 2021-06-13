@@ -1,0 +1,51 @@
+@media only screen and (min-width: 768px) {
+
+    /*============ .search-box =============*/
+    .hidden-box-search{
+        margin-top: -85px; 
+    }
+
+    .show-box-search{
+        margin-top: 75px;
+    }
+
+    div.search-box{
+        width: 70%;
+    }
+
+    div.search-box div#form-search div.form-left .col-date{
+        width: 50%;        
+    }
+
+    div.search-box div#form-search div.form-left .col-label{
+        width: 25%;
+        font-size: 12px;
+    }
+
+    div.search-box div#form-search div.form-left .col-input{
+        width: 50%;
+    }
+
+    /*============ #header ===========*/
+
+    /*=========== .group-box ===============*/
+
+    /*============ #main =============*/
+        /*========== .row-content ============*/
+        div#main div.row-content{
+            width: 80%;
+        }
+
+        div#main div.row-content div.col-left{
+            width: 35%;
+        }
+
+        div#main div.row-content div.col-left img{
+            height: 130px;
+        }
+
+        div#main div.row-content div.col-right{
+            width: 65%;
+            
+        }
+}

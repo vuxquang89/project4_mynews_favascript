@@ -1,0 +1,223 @@
+*{    
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body{
+    font-family: Helvetica, sans-serif;/*"Lucida Sans", sans-serif*/
+    font-weight: 300;
+    line-height: 1.254;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    color: #333;
+}
+
+/*=========== #div-background =============*/
+#div-background{
+    position: fixed;
+    z-index:500;
+    top: 0;
+    left: 0;    
+    width: 100%;
+    height: 100%;
+}
+
+.show-background{	
+    display:block;
+    background-color: rgba(99, 83, 83, 0.5);    
+    -webkit-transition: background-color .4s linear;
+    -ms-transition: background-color 4.s linear;
+    transition: background-color .4ms linear;	
+}
+
+.hidden-background{	
+    display:none;
+    background-color: rgba(255, 255, 255, 0);    
+    -webkit-transition: background-color .4ms linear;
+    -ms-transition: background-color .4ms linear;
+    transition: background-color .4ms linear;	
+}
+
+/*============ #loading ================*/
+#loading {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 515;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(192, 192, 192, 0.5);
+    background-image: url("/images/loader-max.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*============ .search-box =============*/
+
+div.search-box{
+    display: block;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    z-index: 501;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+div.search-box div#form-search{
+    width: 100%;
+    display: flex;
+}
+
+div.search-box div#form-search div.form-left{
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+div.search-box div#form-search div.form-left .col-input{
+    width: 80%;
+}
+
+div.search-box div#form-search div.form-left .col-date{
+    display: flex;
+    align-items: center;
+        
+}
+
+div.search-box div#form-search div.form-left .col-date .form-control{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+div.search-box div#form-search div.form-right{
+    width: 15%;
+    margin-left: 20px;
+}
+
+div.search-box div#form-search div.form-right #i-search{
+    display: none;
+    font-size: 20px;
+}
+
+.hidden-box-search, .show-box-search{
+    transition: margin-top .4s ease-in;
+    -webkit-transition: margin-top .4s ease-in;
+    -moz-transition: margin-top .4s ease-in;
+    -ms-transition: margin-top .4s ease-in;
+}
+
+
+/*============ #header ===========*/
+div#header{
+    width: 100%;
+    background-color: coral;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    position: fixed;
+}
+
+div#header div.logo{
+    width: 25%;
+    padding-top: 10px;
+    text-align: right;
+}
+
+div#header div.logo p{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+div#header div.icon-search{
+    width: 25%;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+div#header div.icon-search i.fa{
+    font-size: 20px;
+}
+
+/*=========== .group-box ===============*/
+
+div.group-row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+div.group-row i{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+
+/*============ #main ============*/
+div#main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 55px;
+}
+
+    /*======== .row-content ========*/
+    div#main div.row-content{
+        /*width: 70%;        */
+        display: inline-flex;
+        margin-top: 5px;
+    }
+
+    div#main div.row-content div.col-left{
+        width: 25%;
+        margin-right: 20px;
+    }
+
+    div#main div.row-content div.col-left img{
+        
+        width: 100%;
+        height: 150px;
+    }
+
+    div#main div.row-content div.col-right{
+        width: 75%;
+        
+    }
+
+    div#main div.row-content div.col-right a{
+        text-decoration: underline;
+    }
+
+    div#main div.row-content div.col-right p{
+        margin: 0px;
+    }       
+
+    div#main div.row-content div.col-right p.news-date{
+        font-size: .8em;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    div#main div.row-content div.col-right p.news-content{
+        font-size: 0.9em;
+        line-height: 15px;
+        overflow: hidden;   /*an doan text bi thua*/
+        text-overflow: ellipsis;    /*thay the doan text bij thua bang dau 3 cham*/
+        -webkit-line-clamp: 3;  /*doan text xuat hien 3 dong*/
+        -moz-line-clamp: 3;
+        -ms-line-clamp: 3;
+    }

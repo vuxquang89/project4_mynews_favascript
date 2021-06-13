@@ -1,0 +1,33 @@
+@media only screen and (min-width: 992px) {
+
+
+    div.search-box{
+        width: 50%;
+    }
+    
+    div.search-box div#form-search div.form-left .col-date{
+        width: 40%;
+        
+    }
+
+    div.search-box div#form-search div.form-left .col-label{
+        width: 30%;
+    }
+
+    div.search-box div#form-search div.form-left .col-input{
+        width: 60%;
+        padding-right: 10px;
+    }
+    
+    /*============ #main ============*/
+        /*======== .row-content ========*/
+        div#main div.row-content{
+            width: 70%;        
+        }
+
+        div#main div.row-content div.col-left{
+            width: 25%;
+        }
+
+        
+}

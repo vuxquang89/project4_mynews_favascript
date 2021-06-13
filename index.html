@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assigment 4 - My News</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/style-mobile.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/style-tablet.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/style-laptop.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jAction.js"></script>
+    <style>
+
+        
+    </style>
+</head>
+<body>
+
+    <div id="div-background" class="hidden-background"></div>
+    <div id="loading"></div>
+
+
+    <div class="group-row">
+        <div id="search-box" class="search-box hidden-box-search">
+            <div id="form-search">
+                <div class="form-left">      
+                    <div class="col-input">
+                        <input class="form-control" id="fsearch" placeholder="keywords">                           
+                    </div> 
+                    <div class="col-date">
+                        <label class="col-label" for="fdate">Date :</label>
+                        <input class="form-control" type="date" id="fdate" name="trip-start" max="2021-12-31">
+                    </div>
+                      
+                </div>
+                <div class="form-right">
+                    <button id="btnSearch" class="btn btn-default">Search</button>
+                    <i id="i-search" class="fa fa-fw fa-search"></i>
+                </div>
+                
+            </div>
+            
+            <i id="close-box" class="fa fa-close"></i>
+            
+        </div>
+    </div>
+
+
+    <div class="mcontainer">
+        <div id="header">           
+            <div class="logo">
+                <p>My News</p>
+            </div>
+            <div class="icon-search">
+                <i id="search-news" class="fa fa-fw fa-search"></i>
+            </div>          
+            
+        </div>
+        
+
+        <div id="main">
+            <!-- content -->
+            <!--
+            <div class="row-content">
+                
+                <div class="col-left">
+                    <image src="images/Business.JPG" alt="image"></image>
+                </div>
+                
+                <div class="col-right">
+                    <a href="#" title="title"><b>ARK snaps up $246 million worth of Coinbase in market debut</b></a>
+                    <p class="news-date"><em>2021-04-15T04:00:00Z</em></p>
+                    <p class="news-content">ARK Invest bought...</p>
+                </div>
+            </div>
+            -->
+            
+        </div>
+    </div>
+</body>
+</html>
